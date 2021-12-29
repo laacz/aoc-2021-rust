@@ -37,8 +37,8 @@ fn count_overlaps(points: &Vec<usize>, diagonals: bool) -> usize {
                 }
                 // This also is something I'm dreading. Same signed + unsigned arithmetics.
                 // Point being - avoid overflows when usize sees negative values.
-                y = if dy.is_negative() { y - dy.abs() as usize } else { y + dy as usize };
                 x = if dx.is_negative() { x - dx.abs() as usize } else { x + dx as usize };
+                y = if dy.is_negative() { y - dy.abs() as usize } else { y + dy as usize };
             }
         }
     }
