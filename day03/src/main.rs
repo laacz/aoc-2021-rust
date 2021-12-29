@@ -6,15 +6,8 @@ fn main() {
 
         // Part 1
         let len = input[0].len();
-        let mut bit_counts: Vec<[i32; 2]> = vec![[0, 0]; len];
         let mut gamma: u32 = 0;
         let mut epsilon: u32 = 0;
-
-        for line in input.iter() {
-            for (char_no, char) in line.chars().enumerate() {
-                bit_counts[char_no][char.to_digit(10).unwrap() as usize] += 1;
-            }
-        }
 
         for i in 0..len {
             let (most_common, _) = count_bits_at_pos(&input, i);
