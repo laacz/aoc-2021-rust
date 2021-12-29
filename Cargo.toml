@@ -4,5 +4,6 @@ members = [
     "lib",
     "day01",
     "day02",
+    "day03",
 ]
 

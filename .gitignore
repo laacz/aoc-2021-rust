@@ -3,4 +3,5 @@ debug/
 Cargo.lock
 **/*rs.bak
 *.pdb
+.idea/
 
