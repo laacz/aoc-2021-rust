@@ -14,6 +14,8 @@ cargo run --bin day04 -- data/04.txt
 cargo run --bin day05 -- data/05.txt
 # guess what - u32 overflowed
 cargo run --bin day06 -- data/06.txt
+# oh, well, I was too lazy to use .map(), so it's a for loop instead
+cargo run --bin day07 -- data/07.txt
 ```
 
 
